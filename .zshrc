@@ -35,15 +35,16 @@ export MANPATH="/usr/local/man:$MANPATH"
 # fzf config
 #
 # Example aliases
-alias zshconfig="v ~/.zshrc"
+alias zshconfig="vim ~/.zshrc"
 alias sourcezshconfig="source ~/.zshrc"
-alias vimconfig="v ~/.config/nvim/init.vim"
+alias vimconfig="vim ~/.config/nvim/init.vim"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPS="--extended"
 export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{node_modules/*,.git/*}"'
 
+<<<<<<< HEAD
 # aliases
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias zshconfig="vim ~/.zshrc"
@@ -51,6 +52,9 @@ alias sourcezshconfig="source ~/.zshrc"
 alias vimconfig="vim ~/.config/nvim/init.vim"
 alias vim="nvim"
 alias v="nvim"
+=======
+alias vim="nvim"
+>>>>>>> 6a50d01... Add golang plugin to vim
 alias migrate="python3 manage.py migrate"
 alias makemigrations="python3 manage.py makemigrations"
 alias runserver="python3 manage.py runserver"

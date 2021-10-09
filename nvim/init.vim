@@ -71,6 +71,8 @@ Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'junegunn/rainbow_parentheses.vim'
 
+" golang Plugin
+Plug 'fatih/vim-go'
 call plug#end()
       
 if (has("termguicolors"))
