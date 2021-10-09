@@ -105,15 +105,15 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="v ~/.zshrc"
+alias zshconfig="vim ~/.zshrc"
 alias sourcezshconfig="source ~/.zshrc"
-alias vimconfig="v ~/.config/nvim/init.vim"
+alias vimconfig="vim ~/.config/nvim/init.vim"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPS="--extended"
 
-alias v="nvim"
+alias vim="nvim"
 alias migrate="python3 manage.py migrate"
 alias makemigrations="python3 manage.py makemigrations"
 alias runserver="python3 manage.py runserver"
