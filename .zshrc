@@ -45,6 +45,7 @@ export FZF_DEFAULT_OPS="--extended"
 export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{node_modules/*,.git/*}"'
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # aliases
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias zshconfig="vim ~/.zshrc"
@@ -52,6 +53,9 @@ alias sourcezshconfig="source ~/.zshrc"
 alias vimconfig="vim ~/.config/nvim/init.vim"
 alias vim="nvim"
 alias v="nvim"
+=======
+alias vim="nvim"
+>>>>>>> 6a50d01... Add golang plugin to vim
 =======
 alias vim="nvim"
 >>>>>>> 6a50d01... Add golang plugin to vim
