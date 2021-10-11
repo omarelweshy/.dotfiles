@@ -99,4 +99,3 @@ export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{n
 export GEM_HOME="$HOME/gems"
 export PATH="$HOME/gems/bin:$PATH"
 fpath=(~/.zsh.d/ $fpath)
-export PATH=$PATH:/usr/local/go/bin
