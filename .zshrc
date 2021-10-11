@@ -31,16 +31,16 @@ export MANPATH="/usr/local/man:$MANPATH"
 
 # export LANG=en_US.UTF-8
 
-# Example aliases
+# fzf config
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_OPS="--extended"
+export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{node_modules/*,.git/*}"'
+
+# aliases
+# alias ohmyzsh="mate ~/.oh-my-zsh"
 alias zshconfig="vim ~/.zshrc"
 alias sourcezshconfig="source ~/.zshrc"
 alias vimconfig="vim ~/.config/nvim/init.vim"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_DEFAULT_OPS="--extended"
-
-# aliases
 alias vim="nvim"
 alias migrate="python3 manage.py migrate"
 alias makemigrations="python3 manage.py makemigrations"
@@ -52,9 +52,7 @@ alias switchjava="sudo update-alternatives --config java"
 alias gc="git clone"
 alias gp="git push"
 
-
 source ~/.nvm/nvm.sh
-export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{node_modules/*,.git/*}"'
 [[ -s /home/omar/.autojump/etc/profile.d/autojump.sh ]] && source /home/omar/.autojump/etc/profile.d/autojump.sh
 
 # Install Ruby Gems to ~/gems
