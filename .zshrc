@@ -74,5 +74,10 @@ function gitall() {
     else
         git commit -m Update # default commit message is `update`
     fi 
-    git push origin HEAD
+    if [ "$2" != "" ]
+    then 
+        git push origin "$2"
+    else
+        git push origin main
+    fi
 }
