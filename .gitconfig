@@ -3,3 +3,5 @@
 	name = Omar Elweshy
 [core]
 	excludesfile = ~/.gitignore
+[init]
+	defaultBranch = main

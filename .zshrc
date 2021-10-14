@@ -37,6 +37,7 @@ alias makemigrations="python3 manage.py makemigrations"
 alias switchjava="sudo update-alternatives --config java"
 alias gc="git clone"
 alias gp="git push"
+alias e="exit"
 
 source ~/.nvm/nvm.sh
 [[ -s /home/omar/.autojump/etc/profile.d/autojump.sh ]] && source /home/omar/.autojump/etc/profile.d/autojump.sh
