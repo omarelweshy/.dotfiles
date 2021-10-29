@@ -3,7 +3,6 @@
   "javascript.suggest.autoImports": true,
   "typescript.suggest.autoImports": true,
 
-  // python config
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": true,
 
