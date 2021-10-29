@@ -30,6 +30,7 @@ export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{n
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias zshconfig="vim ~/.zshrc"
 alias sourcezshconfig="source ~/.zshrc"
+alias sourcevimconfig="source ~/.config/nvim/init.vim"
 alias vimconfig="vim ~/.config/nvim/init.vim"
 alias vim="nvim"
 alias migrate="python3 manage.py migrate"

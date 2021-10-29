@@ -1,2 +1,3 @@
-autoload/
-plugged/
+nvim/plugged
+nvim/autoload
+

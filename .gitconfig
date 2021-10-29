@@ -3,5 +3,6 @@
 	name = Omar Elweshy
 [core]
 	excludesfile = ~/.gitignore
+	editor = vim
 [init]
 	defaultBranch = main
