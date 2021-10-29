@@ -29,6 +29,12 @@ set showmatch
 set splitright
 set splitbelow
 
+" Ignore files
+set wildignore+=*.pyc
+set wildignore+=*_build/*
+set wildignore+=**/node_modules/*
+set wildignore+=**/.git/*
+
 call plug#begin('~/.config/nvim/plugged')
 
 " Gruvbox Theme
@@ -48,16 +54,13 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'neoclide/coc.nvim'
 Plug 'sheerun/vim-polyglot'
 
-" FZF
-"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-"Plug 'junegunn/fzf.vim'
-"Plug 'airblade/vim-rooter'
 
 " Telescope
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
+
 "
 "Plug 'tpope/vim-commentary'
 Plug 'preservim/nerdcommenter'
