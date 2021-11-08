@@ -3,6 +3,7 @@ set wildignore+=*.pyc
 set wildignore+=*_build/*
 set wildignore+=**/node_modules/*
 set wildignore+=**/.git/*
+set termguicolors
 
 call plug#begin('~/.config/nvim/plugged')
 " Gruvbox Theme
@@ -31,27 +32,32 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
 Plug 'williamboman/nvim-lsp-installer'
+Plug 'glepnir/lspsaga.nvim'
+Plug 'simrat39/symbols-outline.nvim'
 
 Plug 'prettier/vim-prettier', { 'do': 'npm install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql'] }
 Plug 'tmsvg/pear-tree'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'airblade/vim-gitgutter'
 
+" solidity highlighter
+Plug 'tomlion/vim-solidity'
+
 " TS Syntax && colorizer && parentheses
 Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'junegunn/rainbow_parentheses.vim'
-
 call plug#end()
       
-if (has("termguicolors"))
- set termguicolors
-endif
-
-set background=dark
 let g:gruvbox_contrast_dark='hard'
+if exists('+termguicolors')
+ let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+endif
 let g:gruvbox_invert_selection='0'
+
 colorscheme gruvbox
+set background=dark
 
 " Lightline and colorizer {()}
 lua require'lualine'.setup{options={theme='powerline'}}
@@ -84,4 +90,3 @@ nnoremap <Leader>+ :vertical resize +5<CR>
 nnoremap <Leader>- :vertical resize -5<CR>
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
-

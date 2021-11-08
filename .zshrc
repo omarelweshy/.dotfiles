@@ -28,11 +28,11 @@ export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{n
 
 # aliases
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias zshconfig="vim ~/.zshrc"
+alias zshconfig="v ~/.zshrc"
 alias sourcezshconfig="source ~/.zshrc"
 alias sourcevimconfig="source ~/.config/nvim/init.vim"
-alias vimconfig="vim ~/.config/nvim/init.vim"
-alias vim="nvim"
+alias vimconfig="v ~/.config/nvim/init.vim"
+alias v="nvim"
 alias migrate="python3 manage.py migrate"
 alias makemigrations="python3 manage.py makemigrations"
 alias switchjava="sudo update-alternatives --config java"
