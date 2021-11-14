@@ -8,6 +8,7 @@ set termguicolors
 call plug#begin('~/.config/nvim/plugged')
 " Gruvbox Theme
 Plug 'morhetz/gruvbox'
+Plug 'folke/lsp-colors.nvim'
 " lualine
 Plug 'hoob3rt/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
