@@ -82,7 +82,7 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 "autocmd VimEnter * NERDTree | wincmd p
 
 " Select all
-nnoremap <C-A> ggVG
+" nnoremap <C-A> ggVG
 " ESC with CTRL-C
 inoremap <C-c> <esc>
 " Zoom
