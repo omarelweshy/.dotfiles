@@ -11,3 +11,6 @@ nnoremap <leader>vrc :lua require(telescope.builtin').search_dotfiles()<CR>
 nnoremap <leader>gc :lua require('telescope.builtin').git_branches()<CR>
 nnoremap <leader>gw :lua require('telescope').extensions.git_worktree.git_worktrees()<CR>
 nnoremap <leader>gm :lua require('telescope').extensions.git_worktree.create_git_worktree()<CR>
+
+lua << EOF 
+require('telescope').setup{ defaults = { file_ignore_patterns = {"node_modules", "build", ".pyc"} } } 

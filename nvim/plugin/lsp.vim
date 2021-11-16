@@ -77,6 +77,7 @@ lua <<EOF
   require('lspconfig')['dockerls'].setup {
     capabilities = capabilities
   }
+
 EOF
 
 

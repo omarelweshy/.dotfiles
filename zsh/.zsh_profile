@@ -1,0 +1,30 @@
+# alias 
+alias zshconfig="v ~/.zshrc"
+alias sourcezshconfig="source ~/.zshrc"
+alias sourcevimconfig="source ~/.config/nvim/init.vim"
+alias vimconfig="v ~/.config/nvim/init.vim"
+alias v="nvim"
+alias migrate="python3 manage.py migrate"
+alias makemigrations="python3 manage.py makemigrations"
+alias switchjava="sudo update-alternatives --config java"
+alias gc="git clone"
+alias gp="git push"
+alias b="brave-browser"
+alias e="exit"
+
+# functions
+function gitall() {
+    git add .
+    if [ "$1" != "" ]
+    then
+        git commit -m "$1"
+    else
+        git commit -m Update # default commit message is `update`
+    fi 
+    if [ "$2" != "" ]
+    then 
+        git push origin "$2"
+    else
+        git push origin main
+    fi
+}

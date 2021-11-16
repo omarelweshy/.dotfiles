@@ -1,11 +1,11 @@
-" Lightline and colorizer {()}
+set termguicolors
+"Lightline and colorizer {()}
 lua require'lualine'.setup{options={theme='powerline'}}
 lua require'plug-colorizer'
 let g:rainbow#max_level = 16
 let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
 
 autocmd FileType * RainbowParentheses
-set termguicolors
 
 " gruvbox
 let g:gruvbox_contrast_dark = 'hard'
