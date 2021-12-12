@@ -29,6 +29,7 @@ Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'williamboman/nvim-lsp-installer'
+Plug 'mfussenegger/nvim-jdtls'
 Plug 'glepnir/lspsaga.nvim'
 " For vsnip users.
 Plug 'hrsh7th/cmp-vsnip'

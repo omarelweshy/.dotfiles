@@ -14,18 +14,26 @@ plugins=(
     zsh-autosuggestions
     fzf
     docker
+    node
+    golang
+    python
+    heroku
+    vscode
 )
 
 # Install Ruby Gems to ~/gems
 export GEM_HOME="$HOME/gems"
 export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export GO111MODULE=auto
 export PATH="$HOME/gems/bin:$PATH"
 export PATH="/home/omar/.local/share/solana/install/active_release/bin:$PATH"
 export MANPATH="/usr/local/man:$MANPATH"
 export LANG=en_US.UTF-8
 export FZF_DEFAULT_OPS="--extended"
 export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{node_modules/*,.git/*}"'
-
+export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
 source $HOME/.zsh_profile
 source ~/.nvm/nvm.sh
 source $ZSH/oh-my-zsh.sh
