@@ -1,4 +1,4 @@
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH="/home/omar/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
@@ -10,6 +10,7 @@ HIST_STAMPS="dd/mm/yyyy"
 plugins=(
     git
     dnf
+    tmux
     zsh-syntax-highlighting
     zsh-autosuggestions
     fzf
@@ -21,11 +22,10 @@ plugins=(
     vscode
 )
 
+# exports
 # Install Ruby Gems to ~/gems
 export GEM_HOME="$HOME/gems"
 export PATH=$PATH:/usr/local/go/bin
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export GO111MODULE=auto
 export PATH="$HOME/gems/bin:$PATH"
 export PATH="/home/omar/.local/share/solana/install/active_release/bin:$PATH"
@@ -34,10 +34,41 @@ export LANG=en_US.UTF-8
 export FZF_DEFAULT_OPS="--extended"
 export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{node_modules/*,.git/*}"'
 export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
-source $HOME/.zsh_profile
-source ~/.nvm/nvm.sh
-source $ZSH/oh-my-zsh.sh
+export PATH=$PATH:$JAVA_HOME/bin
 
+#sources
+# source ~/.nvm/nvm.sh
+source $ZSH/oh-my-zsh.sh
+source ~/.aliases
 fpath=(~/.zsh.d/ $fpath)
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [[ -s /home/omar/.autojump/etc/profile.d/autojump.sh ]] && source /home/omar/.autojump/etc/profile.d/autojump.sh
+#if [ "$TMUX" = "" ]; then tmux; fi
+
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# autojump extension
+[[ -s /home/omar/.autojump/etc/profile.d/autojump.sh ]] && source /home/omar/.autojump/etc/profile.d/autojump.sh
+
+	autoload -U compinit && compinit -u
+
+# Fuctions 
+function gitall() {
+    git add .
+    if [ "$1" != "" ]
+    then
+        git commit -m "$1"
+    else
+        git commit -m Update # default commit message is `update`
+    fi 
+    if [ "$2" != "" ]
+    then 
+        git push origin "$2"
+    else
+        git push origin main
+    fi
+}
+
