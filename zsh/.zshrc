@@ -20,14 +20,11 @@ plugins=(
     python
     heroku
     vscode
+    jsontools
 )
 
 # exports
 # Install Ruby Gems to ~/gems
-export GEM_HOME="$HOME/gems"
-export PATH=$PATH:/usr/local/go/bin
-export GO111MODULE=auto
-export PATH="$HOME/gems/bin:$PATH"
 export PATH="/home/omar/.local/share/solana/install/active_release/bin:$PATH"
 export MANPATH="/usr/local/man:$MANPATH"
 export LANG=en_US.UTF-8
@@ -35,11 +32,18 @@ export FZF_DEFAULT_OPS="--extended"
 export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{node_modules/*,.git/*}"'
 export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
 export PATH=$PATH:$JAVA_HOME/bin
+export PATH="/home/omar/Downloads/binaryen-version_100-x86_64-linux/binaryen-version_100/bin/:$PATH"
+# GO exports
+export GO111MODULE=on
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOPATH/bin:/usr/local/go/bin
 
 #sources
 # source ~/.nvm/nvm.sh
 source $ZSH/oh-my-zsh.sh
 source ~/.aliases
+source /etc/profile.d/maven.sh
 fpath=(~/.zsh.d/ $fpath)
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [[ -s /home/omar/.autojump/etc/profile.d/autojump.sh ]] && source /home/omar/.autojump/etc/profile.d/autojump.sh
