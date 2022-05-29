@@ -5,7 +5,14 @@ set wildignore+=**/node_modules/*
 set wildignore+=**/.git/*
 
 call plug#begin('~/.config/nvim/plugged')
-" Gruvbox Theme
+" LSP
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'tzachar/cmp-tabnine', { 'do': './install.sh' }
+Plug 'onsails/lspkind-nvim'
+"Gruvbox Theme
 Plug 'morhetz/gruvbox'
 Plug 'folke/lsp-colors.nvim'
 " lualine
@@ -18,11 +25,10 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'ThePrimeagen/git-worktree.nvim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'simrat39/symbols-outline.nvim'
-"lsp
-Plug 'neovim/nvim-lspconfig'
-Plug 'williamboman/nvim-lsp-installer'
-Plug 'mfussenegger/nvim-jdtls'
-Plug 'glepnir/lspsaga.nvim'
+
+" Snippets
+Plug 'L3MON4D3/LuaSnip'
+Plug 'rafamadriz/friendly-snippets'
 Plug 'prettier/vim-prettier', { 'do': 'npm install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql'] }
 Plug 'christoomey/vim-tmux-navigator'
 " solidity highlighter
