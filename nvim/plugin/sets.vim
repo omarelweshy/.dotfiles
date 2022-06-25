@@ -30,3 +30,8 @@ set splitright
 set splitbelow
 set completeopt=menu,menuone,noselect
 
+" Ignore files
+set wildignore+=*.pyc
+set wildignore+=*_build/*
+set wildignore+=**/node_modules/*
+set wildignore+=**/.git/*
