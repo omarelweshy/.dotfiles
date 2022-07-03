@@ -29,9 +29,11 @@ set showmatch
 set splitright
 set splitbelow
 set completeopt=menu,menuone,noselect
+set wildignore=.hg,.svn,*~,*.png,*.jpg,*.gif,*.settings,Thumbs.db,*.min.js,*.swp,publish/*,intermediate/*,*.o,*.hi,Zend,vendor
 
 " Ignore files
 set wildignore+=*.pyc
 set wildignore+=*_build/*
 set wildignore+=**/node_modules/*
 set wildignore+=**/.git/*
+set wildignore+=*target/*
