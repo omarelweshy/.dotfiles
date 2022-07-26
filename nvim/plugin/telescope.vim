@@ -4,6 +4,7 @@ nnoremap <leader>ps :lua require('telescope.builtin').grep_string({ search = vim
 nnoremap <C-p> :lua require('telescope.builtin').find_files()<CR>
 nnoremap <Leader>pf :lua require('telescope.builtin').git_files()<CR>
 
+nnoremap <leader>pp :lua require('telescope.builtin').live_grep()<CR>
 nnoremap <leader>pw :lua require('telescope.builtin').grep_string { search = vim.fn.expand("<cword>") }<CR>
 nnoremap <leader>pb :lua require('telescope.builtin').buffers()<CR>
 nnoremap <leader>vh :lua require('telescope.builtin').help_tags()<CR>
@@ -13,4 +14,4 @@ nnoremap <leader>gw :lua require('telescope').extensions.git_worktree.git_worktr
 nnoremap <leader>gm :lua require('telescope').extensions.git_worktree.create_git_worktree()<CR>
 
 lua << EOF 
-require('telescope').setup{ defaults = { file_ignore_patterns = {"node_modules", "build", ".pyc"} } } 
+require('telescope').setup{ defaults = { file_ignore_patterns = {"node_modules", "build", ".pyc", "target"} } } 

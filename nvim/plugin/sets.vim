@@ -36,4 +36,4 @@ set wildignore+=*.pyc
 set wildignore+=*_build/*
 set wildignore+=**/node_modules/*
 set wildignore+=**/.git/*
-set wildignore+=*target/*
+set wildignore+=**/target/*

@@ -60,15 +60,15 @@ nmap <leader>w :w<CR>
 " Quick-quit
 nmap <leader>q :q<CR>
 " No arrow keys --- force yourself to use the home row
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
+"nnoremap <up> <nop>
+"nnoremap <down> <nop>
+"inoremap <up> <nop>
+"inoremap <down> <nop>
+"inoremap <left> <nop>
+"inoremap <right> <nop>
 " Left and right can switch buffers
-nnoremap <left> :bp<CR>
-nnoremap <right> :bn<CR>
+"nnoremap <left> :bp<CR>
+"nnoremap <right> :bn<CR>
 " nnoremap <C-A> ggVG
 "===============================================
 "RUST
