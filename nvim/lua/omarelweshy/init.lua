@@ -1,3 +1,2 @@
-print("from OMMAR");
-
 require("omarelweshy.set");
+require("omarelweshy.picker");
