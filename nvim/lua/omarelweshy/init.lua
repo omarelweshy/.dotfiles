@@ -1,5 +1,6 @@
-require('omarelweshy.lspconfig')
-require('omarelweshy.cmp')
-require('omarelweshy.treesitter')
-require('omarelweshy.plug-colorizer')
-
+require("omarelweshy.set");
+require("omarelweshy.packer");
+require("omarelweshy.colors");
+require("omarelweshy.telescope");
+require("omarelweshy.cmp");
+require("omarelweshy.lspconfig");
