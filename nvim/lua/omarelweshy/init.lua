@@ -11,7 +11,7 @@ ThePrimeagenGroup = augroup('omarelweshy', {})
 
 local autocmd = vim.api.nvim_create_autocmd
 local yank_group = augroup('HighlightYank', {})
-
+require("nvim-autopairs").setup {} 
 autocmd('TextYankPost', {
     group = yank_group,
     pattern = '*',

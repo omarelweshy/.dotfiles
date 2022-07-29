@@ -1,5 +1,6 @@
 vim.g.omarelweshy_colorscheme = "tokyonight"
 
+require'colorizer'.setup()
 require("lsp-colors").setup({
   Error = "#db4b4b",
   Warning = "#e0af68",
@@ -11,7 +12,6 @@ require'lualine'.setup{options={theme='powerline'}}
 --vim.g.rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
 
 --autocmd FileType * RainbowParentheses
-
 
 function ColorMyPencils()
     vim.g.gruvbox_contrast_dark = 'hard'

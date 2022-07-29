@@ -16,9 +16,5 @@ nnoremap("<C-j>", "<C-w>j")
 nnoremap("<C-k>", "<C-w>k")
 nnoremap("<C-l>", "<C-w>l")
 
--- Telescope
---keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
---keymap("n", "<C-p>", "<cmd>Telescope find_files<cr>", opts)
-
 nnoremap("<leader>w", ":w<cr>")
 nnoremap("<leader>q", ":q<cr>")

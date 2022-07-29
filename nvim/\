@@ -28,8 +28,8 @@ return require("packer").startup(function()
     use("nvim-treesitter/nvim-treesitter", {
         run = ":TSUpdate"
     })
-    use("norcalli/nvim-colorizer.lua")
     use("p00f/nvim-ts-rainbow")
+    use("junegunn/rainbow_parentheses.vim")
     use("folke/lsp-colors.nvim")
     -- git
     use("airblade/vim-gitgutter")
@@ -41,7 +41,5 @@ return require("packer").startup(function()
     use("kyazdani42/nvim-web-devicons")
     use("ryanoasis/vim-devicons")
     
-    -- autopair
-    use("windwp/nvim-autopairs")
 end )
 
