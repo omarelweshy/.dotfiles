@@ -2,9 +2,11 @@ vim.cmd [[packadd packer.nvim]]
 
 return require("packer").startup(function()
     use("wbthomason/packer.nvim")
+    -- telescope 
     use("nvim-lua/plenary.nvim")
     use("nvim-lua/popup.nvim")
     use("nvim-telescope/telescope.nvim")
+    use("BurntSushi/ripgrep")
 
     -- lSP blabla
     use("neovim/nvim-lspconfig")
@@ -19,6 +21,7 @@ return require("packer").startup(function()
     use("L3MON4D3/LuaSnip")
     use("saadparwaiz1/cmp_luasnip")
     use("williamboman/nvim-lsp-installer")
+    
     -- Colorschema
     use("gruvbox-community/gruvbox")
     use("folke/tokyonight.nvim")
