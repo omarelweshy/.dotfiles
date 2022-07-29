@@ -4,3 +4,4 @@ require("omarelweshy.colors");
 require("omarelweshy.telescope");
 require("omarelweshy.cmp");
 require("omarelweshy.lspconfig");
+require("omarelweshy.keymaps");
