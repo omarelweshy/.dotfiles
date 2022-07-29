@@ -18,12 +18,23 @@ return require("packer").startup(function()
     use("simrat39/symbols-outline.nvim")
     use("L3MON4D3/LuaSnip")
     use("saadparwaiz1/cmp_luasnip")
-
+    use("williamboman/nvim-lsp-installer")
     -- Colorschema
     use("gruvbox-community/gruvbox")
+    use("folke/tokyonight.nvim")
     use("nvim-treesitter/nvim-treesitter", {
         run = ":TSUpdate"
     })
+    use("junegunn/rainbow_parentheses.vim")
+    use("folke/lsp-colors.nvim")
+    -- git
+    use("airblade/vim-gitgutter")
+    -- rust
+    use("rust-lang/rust.vim")
 
+    -- luaLine
+    use("hoob3rt/lualine.nvim")
+    use("kyazdani42/nvim-web-devicons")
+    use("ryanoasis/vim-devicons")
 end )
 
