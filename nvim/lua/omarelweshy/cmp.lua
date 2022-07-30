@@ -16,7 +16,7 @@
       -- documentation = cmp.config.window.bordered(),
     },
     mapping = cmp.mapping.preset.insert({
-      --['<Tab>'] = cmp.mapping.confirm({ select = true }),
+      ['<cr>'] = cmp.mapping.confirm({ select = true }),
       ['<Tab>'] = cmp.mapping.select_next_item({ select = true }),
       --['<C-Tab>'] = cmp.mapping.select_prev_item({ select = true }),
       ['<C-b>'] = cmp.mapping.scroll_docs(-4),
