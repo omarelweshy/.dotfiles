@@ -40,4 +40,13 @@ vim.opt.shortmess:append("c")
 
 vim.opt.colorcolumn = "110"
 vim.g.mapleader = " "
+vim.g["prettier#autoformat"] = 1
+vim.g["prettier#autoformat_require_pragma"] = 0
+vim.g["prettier#config#semi"]= false
 
+--RUST
+vim.g["rustfmt_autosave"] = 1
+vim.g["rustfmt_emit_files"] = 1
+vim.g["rustfmt_fail_silently"] = 0
+
+vim.opt.wildignore = {'**/node_modules/*', '**/.git/*', '*.pyc', '*_build/*', '**/target/*'}
