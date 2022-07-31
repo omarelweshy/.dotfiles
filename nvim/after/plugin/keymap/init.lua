@@ -18,3 +18,11 @@ nnoremap("<C-l>", "<C-w>l")
 
 nnoremap("<leader>w", ":w<cr>")
 nnoremap("<leader>q", ":q<cr>")
+
+-- For global replace
+nnoremap("gR", "gD:%s/<C-R>///gc<left><left><left>")
+-- For local replace
+nnoremap("gr",  "gd[{V%::s/<C-R>///gc<left><left><left>")
+
+-- LSP
+nnoremap("gd", vim.lsp.buf.definition)
