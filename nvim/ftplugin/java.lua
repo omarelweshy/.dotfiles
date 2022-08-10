@@ -1,12 +1,13 @@
-local nvim_lsp = require'lspconfig'
+-- See `:help vim.lsp.start_client` for an overview of the supported `config` options.
 
 local project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ':p:h:t')
 local workspace_dir = '/home/omar/playground/playjava' .. project_name
 
-require('lspconfig').tsserver.setup{}
-require('lspconfig').rust_analyzer.setup{}
-require('lspconfig').jdtls.setup{
+local config = {
+  -- The command that starts the language server
+  -- See: https://github.com/eclipse/eclipse.jdt.ls#running-from-the-command-line
   cmd = {
+
     -- 💀
     'java', '/usr/bin/java',-- or '/path/to/java17_or_newer/bin/java'
             -- depends on if `java` is in your $PATH env variable and if it points to the right version.
@@ -63,25 +64,7 @@ require('lspconfig').jdtls.setup{
   init_options = {
     bundles = {}
   },
-}   
---local on_attach = function(client)
---require'completion'.on_attach(client)
---end
---nvim_lsp.rust_analyzer.setup({
- --   on_attach=on_attach,
-  --  settings = {
-    --    ["rust-analyzer"] = {
-      --      assist = {
-        --        importGranularity = "module",
-          --      importPrefix = "self",
-         --   },
-          --  cargo = {
-           --     loadOutDirsFromCheck = true
-            --},
-            --procMacro = {
-            --    enable = true
-           -- },
-        --}
-    --}
---})
---
+}
+-- This starts a new client & server,
+-- or attaches to an existing client & server depending on the `root_dir`.
+require('jdtls').start_or_attach(config)
