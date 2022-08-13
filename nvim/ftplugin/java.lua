@@ -1,8 +1,5 @@
 -- See `:help vim.lsp.start_client` for an overview of the supported `config` options.
 
-local project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ':p:h:t')
-local workspace_dir = '/home/omar/playground/playjava' .. project_name
-
 local config = {
   -- The command that starts the language server
   -- See: https://github.com/eclipse/eclipse.jdt.ls#running-from-the-command-line
@@ -23,14 +20,14 @@ local config = {
     '--add-opens', 'java.base/java.lang=ALL-UNNAMED',
 
     -- 💀
-    '-jar', '/usr/lib/jvm/jdt-language-server-1.9.0-202203031534/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.2.400.v20211117-0650.jar',
+    '-jar', '~/.local/share/nvim/lsp/jdt-language-server/plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.2.400.v20211117-0650.jar',
          -- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                                       ^^^^^^^^^^^^^^
          -- Must point to the                                                     Change this to
          -- eclipse.jdt.ls installation                                           the actual version
 
 
     -- 💀
-    '-configuration', '/usr/lib/jvm/jdt-language-server-1.9.0-202203031534/config_linux/',
+    '-configuration', '/home/omar/.local/share/nvim/lsp/jdt-language-server/config_linux',
                     -- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^        ^^^^^^
                     -- Must point to the                      Change to one of `linux`, `win` or `mac`
                     -- eclipse.jdt.ls installation            Depending on your system.
@@ -38,7 +35,7 @@ local config = {
 
     -- 💀
     -- See `data directory configuration` section in the README
-    '-data', workspace_dir,
+    '-data', '/home/omar/.local/share/nvim/lsp/jdt-language-server/workspace/folder',
   },
 
   -- 💀
@@ -67,4 +64,4 @@ local config = {
 }
 -- This starts a new client & server,
 -- or attaches to an existing client & server depending on the `root_dir`.
-require('jdtls').start_or_attach(config)
+--require('jdtls').start_or_attach(config)
