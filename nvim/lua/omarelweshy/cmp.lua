@@ -70,6 +70,3 @@
     capabilities = capabilities
   }
 
-  require('lspconfig')['jdtls'].setup {
-    capabilities = capabilities
-}

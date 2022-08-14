@@ -45,7 +45,7 @@ return require("packer").startup(function()
     use("windwp/nvim-autopairs")
 
     -- java
-    use 'mfussenegger/nvim-jdtls'
+ --   use 'mfussenegger/nvim-jdtls'
     -- prettier
     use("prettier/vim-prettier", {
         run = "yarn install --frozen-lockfile --production";
