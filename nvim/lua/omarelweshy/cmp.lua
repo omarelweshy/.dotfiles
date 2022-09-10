@@ -70,3 +70,6 @@
     capabilities = capabilities
   }
 
+  require('lspconfig')['html'].setup {
+    capabilities = capabilities
+  }
