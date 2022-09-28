@@ -1,0 +1,91 @@
+{
+  "python.pythonPath": "/usr/bin/python3",
+  "code-runner.executorMap": {
+    "python": "/usr/bin/python3"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "git.autofetch": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "java.home": "/usr/lib/jvm/java-14-openjdk-amd64",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "python.languageServer": "Pylance",
+  "editor.formatOnSave": true,
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "cSpell.ignoreWords": [
+    "infobtn",
+    "pyuic"
+  ],
+  "editor.fontSize": 16,
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.tabSize": 2,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "gitlens.defaultDateFormat": null,
+  "gitlens.defaultDateShortFormat": null,
+  "gitlens.defaultTimeFormat": null,
+  "prettier.semi": false,
+  "editor.fontWeight": 400,
+  "editor.fontLigatures": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.linkedEditing": true,
+  "editor.fontFamily": "JetBrains Mono",
+  "python.showStartPage": false,
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.minimap.enabled": false,
+  "workbench.sideBar.location": "right",
+  "explorer.openEditors.visible": 0,
+  "prettier.singleQuote": true,
+  "prettier.withNodeModules": true,
+  "errorLens.onSave": true,
+  "python.defaultInterpreterPath": "/usr/bin/python3",
+  "editor.inlineSuggest.enabled": true,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "redhat.telemetry.enabled": true,
+  "go.toolsManagement.autoUpdate": true,
+  "ibm-blockchain-platform.v2.fabric.runtime": {
+    "1 Org Local Fabric": 8081
+  },
+  "go.lintOnSave": "file",
+  "go.formatTool": "goimports",
+  "go.useLanguageServer": true,
+  "[go]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "go.docsTool": "gogetdoc",
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": true,
+    "markdown": false,
+    "rust": true,
+    "typescriptreact": false
+  },
+  "bracketPairColorizer.depreciation-notice": false,
+  "files.associations": {
+    "*.html": "html"
+  },
+  "code-runner.runInTerminal": true,
+  "window.zoomLevel": 1
+}
