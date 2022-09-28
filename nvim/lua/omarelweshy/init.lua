@@ -5,6 +5,7 @@ require("omarelweshy.telescope");
 require("omarelweshy.cmp");
 require("omarelweshy.lspconfig");
 require("omarelweshy.keymaps");
+require('Comment').setup()
 
 local augroup = vim.api.nvim_create_augroup
 ThePrimeagenGroup = augroup('omarelweshy', {})
@@ -22,3 +23,4 @@ autocmd('TextYankPost', {
         })
     end,
 })
+
