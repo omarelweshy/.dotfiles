@@ -12,7 +12,7 @@ git clone git@github.com:omarelweshy/.dotfiles.git ~/.dotfiles
 git clone https://github.com/omarelweshy/.dotfiles.git ~/.dotfiles
 ```
 
-2. Create symlinks in the Home directory to the real files in the repo.
+2. Create symlinks in the Home directory to the real files in the repo
 
 ```zsh
 ln -s ~/.dotfiles/zsh/.zshrc ~/.zshrc
