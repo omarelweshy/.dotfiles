@@ -8,8 +8,6 @@ require("lsp-colors").setup({
   Hint = "#10B981"
 })
 require'lualine'.setup{options={theme='powerline'}}
---vim.g.rainbow#max_level = 16
---vim.g.rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
 
 --autocmd FileType * RainbowParentheses
 function ColorMyPencils()
