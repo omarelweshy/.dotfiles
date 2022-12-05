@@ -1,6 +1,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH="/home/omar/.oh-my-zsh"
+export TERMINAL=kitty
 ZSH_THEME="robbyrussell"
 DISABLE_UPDATE_PROMPT="true"
 export UPDATE_ZSH_DAYS=7
@@ -43,12 +44,11 @@ export PATH=$PATH:$GOPATH/bin:/usr/local/go/bin
 # source ~/.nvm/nvm.sh
 source $ZSH/oh-my-zsh.sh
 source ~/.aliases
-source /etc/profile.d/maven.sh
+#source /etc/profile.d/maven.sh
 fpath=(~/.zsh.d/ $fpath)
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [[ -s /home/omar/.autojump/etc/profile.d/autojump.sh ]] && source /home/omar/.autojump/etc/profile.d/autojump.sh
-#if [ "$TMUX" = "" ]; then tmux; fi
-
+if [ "$TMUX" = "" ]; then tmux; fi
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

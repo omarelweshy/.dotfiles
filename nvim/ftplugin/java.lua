@@ -1,9 +1,7 @@
-require('lspconfig').tsserver.setup{}
-require('lspconfig').rust_analyzer.setup{}
-require('lspconfig').html.setup{}
-require('lspconfig').jdtls.setup{
+-- See `:help vim.lsp.start_client` for an overview of the supported `config` options.
+local config = {
+  -- The command that starts the language server
   cmd = {
-
     -- 💀
     '/usr/lib/jvm/java-11-openjdk/bin/java',
     '-Declipse.application=org.eclipse.jdt.ls.core.id1',
@@ -34,4 +32,7 @@ require('lspconfig').jdtls.setup{
     java = {
     }
   }
-}
+  }
+-- This starts a new client & server,
+-- or attaches to an existing client & server depending on the `root_dir`
+--require('jdtls').start_or_attach(config)

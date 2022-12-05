@@ -1,7 +1,7 @@
 vim.opt.guicursor = ""
 
 vim.opt.nu = true
-vim.opt.relativenumber = true
+--vim.opt.relativenumber = true
 
 vim.opt.errorbells = false
 
@@ -43,6 +43,8 @@ vim.g.mapleader = " "
 vim.g["prettier#autoformat"] = 1
 vim.g["prettier#autoformat_require_pragma"] = 0
 vim.g["prettier#config#semi"]= false
+vim.g.mouse=""
+vim.g.ttymouse=""
 
 --RUST
 vim.g["rustfmt_autosave"] = 1

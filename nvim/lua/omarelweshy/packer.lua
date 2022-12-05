@@ -8,7 +8,7 @@ return require("packer").startup(function()
     use("nvim-telescope/telescope.nvim")
     use("BurntSushi/ripgrep")
 
-    -- lSP blabla
+    use("saadparwaiz1/cmp_luasnip")    -- lSP blabla
     use("neovim/nvim-lspconfig")
     use("hrsh7th/cmp-nvim-lsp")
     use("hrsh7th/cmp-buffer")
@@ -18,10 +18,10 @@ return require("packer").startup(function()
     use("nvim-lua/lsp_extensions.nvim")
     use("glepnir/lspsaga.nvim")
     use("simrat39/symbols-outline.nvim")
-    use("L3MON4D3/LuaSnip")
-    use("saadparwaiz1/cmp_luasnip")
+    use({"L3MON4D3/LuaSnip", tag = "v<CurrentMajor>.*"})
     use("williamboman/nvim-lsp-installer")
-    
+    use ("rafamadriz/friendly-snippets")
+
     -- Colorschema
     use("gruvbox-community/gruvbox")
     use("folke/tokyonight.nvim")
@@ -44,10 +44,21 @@ return require("packer").startup(function()
     -- autopair
     use("windwp/nvim-autopairs")
 
+    -- java
+ --   use 'mfussenegger/nvim-jdtls'
     -- prettier
     use("prettier/vim-prettier", {
         run = "yarn install --frozen-lockfile --production";
         ft= {'javascript', 'typescript', 'typescriptreact' ,'css', 'less', 'scss', 'json', 'graphql', 'svelte', 'yaml', 'html', "rust", "lua"}
     })
+
+    -- Commenting
+    use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+}
+
 end )
 

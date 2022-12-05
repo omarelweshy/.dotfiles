@@ -1,0 +1,6 @@
+alias ls="exa -lh --git"
+alias v="nvim"
+alias add="git add ."
+alias commit="git commit -m"
+alias push="git push"
+alias e="exit"

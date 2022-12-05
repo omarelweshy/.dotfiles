@@ -18,6 +18,11 @@ nnoremap("<C-l>", "<C-w>l")
 
 nnoremap("<leader>w", ":w<cr>")
 nnoremap("<leader>q", ":q<cr>")
+nnoremap("<leader>e", ":wq<cr>")
+nnoremap("<C-d>", "<C-d>zz")
+nnoremap("<C-u>", "<C-u>zz")
+nnoremap("n", "nzzzv")
+nnoremap("N", "Nzzzv")
 
 -- For global replace
 nnoremap("gR", "gD:%s/<C-R>///gc<left><left><left>")
