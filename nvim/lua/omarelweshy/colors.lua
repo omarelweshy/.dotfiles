@@ -23,5 +23,11 @@ function ColorMyPencils()
         vim.api.nvim_set_hl(0, thing, opts)
     end
 
+    hl("ColorColumn", {
+        ctermbg = 0,
+        bg = "#2B79A0",
+    })
+
+
 end
 ColorMyPencils()
