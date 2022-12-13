@@ -5,7 +5,6 @@ local inoremap = Remap.inoremap
 local xnoremap = Remap.xnoremap
 local nmap = Remap.nmap
 
-
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
 
@@ -23,6 +22,10 @@ nnoremap("<C-d>", "<C-d>zz")
 nnoremap("<C-u>", "<C-u>zz")
 nnoremap("n", "nzzzv")
 nnoremap("N", "Nzzzv")
+
+-- Microsoft office ???!
+inoremap("<C-s>", "<C-c>:w<cr>")
+nnoremap("<C-s>", "<C-c>:w<cr>")
 
 -- For global replace
 nnoremap("gR", "gD:%s/<C-R>///gc<left><left><left>")
