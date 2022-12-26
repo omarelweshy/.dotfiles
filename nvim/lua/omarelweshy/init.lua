@@ -5,7 +5,7 @@ require("omarelweshy.telescope");
 require("omarelweshy.cmp");
 require("omarelweshy.lspconfig");
 require("omarelweshy.keymaps");
-require('Comment').setup()
+require("omarelweshy.comments")
 
 local augroup = vim.api.nvim_create_augroup
 ThePrimeagenGroup = augroup('omarelweshy', {})
