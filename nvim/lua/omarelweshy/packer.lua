@@ -60,5 +60,8 @@ return require("packer").startup(function()
     end
 }
 
+    -- File explorer
+    use("preservim/nerdtree")
+
 end )
 

@@ -41,3 +41,10 @@ vnoremap("K", ":m '<-2<CR>gv=gv")
 
 -- Delete and keep copied buffer
 xnoremap("<leader>p", "\"_dP")
+
+-- NERDTree
+nnoremap("<leader>n", ":NERDTreeFocus<CR>")
+nnoremap ("<C-n>", ":NERDTree<CR>")
+nnoremap("<C-t>", ":NERDTreeToggle<CR>")
+nnoremap ("<C-f>", ":NERDTreeFind<CR>")
+
