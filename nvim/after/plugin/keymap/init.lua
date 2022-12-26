@@ -18,8 +18,8 @@ nnoremap("<C-l>", "<C-w>l")
 nnoremap("<leader>w", ":w<cr>")
 nnoremap("<leader>q", ":q<cr>")
 nnoremap("<leader>e", ":wq<cr>")
-nnoremap("<C-d>", "<C-d>zz")
-nnoremap("<C-u>", "<C-u>zz")
+nnoremap("<C-j>", "<C-d>zz")
+nnoremap("<C-k>", "<C-u>zz")
 nnoremap("n", "nzzzv")
 nnoremap("N", "Nzzzv")
 
@@ -34,3 +34,10 @@ nnoremap("gr",  "gd[{V%::s/<C-R>///gc<left><left><left>")
 
 -- LSP
 nnoremap("gd", vim.lsp.buf.definition)
+
+-- Move lines up and down
+vnoremap("J", ":m '>+1<CR>gv=gv")
+vnoremap("K", ":m '<-2<CR>gv=gv")
+
+-- Delete and keep copied buffer
+xnoremap("<leader>p", "\"_dP")
