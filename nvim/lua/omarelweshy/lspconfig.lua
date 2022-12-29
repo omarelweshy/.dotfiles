@@ -4,7 +4,6 @@ require('lspconfig').html.setup{}
 require('lspconfig').dockerls.setup{}
 require('lspconfig').jdtls.setup{
   cmd = {
-
     -- 💀
     '/usr/lib/jvm/java-11-openjdk/bin/java',
     '-Declipse.application=org.eclipse.jdt.ls.core.id1',
@@ -20,7 +19,7 @@ require('lspconfig').jdtls.setup{
     -- 💀
     '-jar', '/home/omar/.local/share/nvim/lsp_servers/jdtls/plugins/org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar',
     '-configuration', '/home/omar/.local/share/nvim/lsp_servers/jdtls/config_linux',
-    '-data', '/home/omar/playground'
+    '-data', '/home/omar/.cache/jdtls/workspace'
   },
 
   -- 💀
@@ -33,6 +32,5 @@ require('lspconfig').jdtls.setup{
   -- for a list of options
   settings = {
     java = {
-    }
-  }
-}
+    },
+  }}
