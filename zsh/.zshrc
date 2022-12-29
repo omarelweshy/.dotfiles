@@ -31,7 +31,7 @@ export MANPATH="/usr/local/man:$MANPATH"
 export LANG=en_US.UTF-8
 export FZF_DEFAULT_OPS="--extended"
 export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{node_modules/*,.git/*}"'
-export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64"
+export JAVA_HOME="/usr/lib/jvm/java-11-openjdk"
 export PATH=$PATH:$JAVA_HOME/bin
 export PATH="/home/omar/Downloads/binaryen-version_100-x86_64-linux/binaryen-version_100/bin/:$PATH"
 # GO exports
@@ -39,6 +39,10 @@ export GO111MODULE=on
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOPATH/bin:/usr/local/go/bin
+export PATH=$PATH:$HOME/.local/bin
+
+# Kafka Path
+export PATH=$PATH:~/kafka_2.13-3.1.0/bin
 
 #sources
 # source ~/.nvm/nvm.sh
@@ -77,4 +81,3 @@ function gitall() {
         git push origin main
     fi
 }
-
