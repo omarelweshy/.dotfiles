@@ -63,7 +63,7 @@ export NVM_DIR="$HOME/.nvm"
 # autojump extension
 [[ -s /home/omar/.autojump/etc/profile.d/autojump.sh ]] && source /home/omar/.autojump/etc/profile.d/autojump.sh
 
-	autoload -U compinit && compinit -u
+autoload -U compinit && compinit -u
 
 # Fuctions 
 function gitall() {
