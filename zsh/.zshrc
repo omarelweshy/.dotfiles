@@ -22,6 +22,7 @@ plugins=(
     heroku
     vscode
     jsontools
+    kubectl
 )
 
 # exports
