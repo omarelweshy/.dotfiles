@@ -1,6 +1,6 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
-export ZSH="/home/omar/.oh-my-zsh"
+export ZSH=$HOME/.oh-my-zsh
 export TERMINAL=kitty
 ZSH_THEME="robbyrussell"
 DISABLE_UPDATE_PROMPT="true"
@@ -32,7 +32,7 @@ export MANPATH="/usr/local/man:$MANPATH"
 export LANG=en_US.UTF-8
 export FZF_DEFAULT_OPS="--extended"
 export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{node_modules/*,.git/*}"'
-export JAVA_HOME="/usr/lib/jvm/java-11-openjdk"
+# export JAVA_HOME="/usr/lib/jvm/java-11-openjdk" !!!!!!!!!! NOT WORKING WITH MacOS
 export PATH=$PATH:$JAVA_HOME/bin
 export PATH="/home/omar/Downloads/binaryen-version_100-x86_64-linux/binaryen-version_100/bin/:$PATH"
 # GO exports
