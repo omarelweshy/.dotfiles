@@ -172,7 +172,7 @@ bar {
 		-p date.format=" %a, %b %d %Y" time.format=" %H:%M:%S " \
         -t gruvbox-powerline 
 	tray_padding 1
-	position top
+	position bottom
 	height 30
 }
 
