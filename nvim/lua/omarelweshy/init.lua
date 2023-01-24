@@ -24,6 +24,4 @@ autocmd('TextYankPost', {
     end,
 })
 
--- NERDTree
---Start NERDTree and leave the cursor in it.
 
