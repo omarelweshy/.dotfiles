@@ -85,6 +85,11 @@ _G.packer_plugins = {
     path = "/home/omar/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  black = {
+    loaded = true,
+    path = "/home/omar/.local/share/nvim/site/pack/packer/start/black",
+    url = "https://github.com/psf/black"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/omar/.local/share/nvim/site/pack/packer/start/cmp-buffer",

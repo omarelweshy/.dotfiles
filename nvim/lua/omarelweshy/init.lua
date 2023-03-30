@@ -24,4 +24,7 @@ autocmd('TextYankPost', {
     end,
 })
 
-
+autocmd('BufWritePre', {
+    pattern = 'python',
+    command = 'Black',
+})

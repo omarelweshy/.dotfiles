@@ -63,5 +63,7 @@ return require("packer").startup(function()
     -- File explorer
     use("preservim/nerdtree")
 
+    -- Python Formatter
+    use("psf/black")
 end )
 
