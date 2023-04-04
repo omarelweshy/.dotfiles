@@ -8,7 +8,7 @@ require("omarelweshy.keymaps");
 require("omarelweshy.comments")
 
 local augroup = vim.api.nvim_create_augroup
-ThePrimeagenGroup = augroup('omarelweshy', {})
+omarelweshyGroup = augroup('omarelweshy', {})
 
 local autocmd = vim.api.nvim_create_autocmd
 local yank_group = augroup('HighlightYank', {})
@@ -23,6 +23,14 @@ autocmd('TextYankPost', {
         })
     end,
 })
+
+vim.cmd([[
+augroup black_on_save
+  autocmd!
+  autocmd BufWritePre *.py Black
+augroup end
+
+]])
 
 autocmd('BufWritePre', {
     pattern = 'python',
