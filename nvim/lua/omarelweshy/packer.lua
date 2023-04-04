@@ -1,4 +1,4 @@
-vim.cmd [[packadd packer.nvim]]
+-- vim.cmd [[packadd packer.nvim]]
 
 return require("packer").startup(function()
     use("wbthomason/packer.nvim")
@@ -21,7 +21,6 @@ return require("packer").startup(function()
     use({"L3MON4D3/LuaSnip", tag = "v<CurrentMajor>.*"})
     use("williamboman/nvim-lsp-installer")
     use ("rafamadriz/friendly-snippets")
-
     -- Colorschema
     use("gruvbox-community/gruvbox")
     use("folke/tokyonight.nvim")
@@ -35,7 +34,6 @@ return require("packer").startup(function()
     use("airblade/vim-gitgutter")
     -- rust
     use("rust-lang/rust.vim")
-
     -- luaLine
     use("hoob3rt/lualine.nvim")
     use("kyazdani42/nvim-web-devicons")
@@ -43,7 +41,6 @@ return require("packer").startup(function()
     
     -- autopair
     use("windwp/nvim-autopairs")
-
     -- java
  --   use 'mfussenegger/nvim-jdtls'
     -- prettier
@@ -59,11 +56,10 @@ return require("packer").startup(function()
         require('Comment').setup()
     end
 }
-
     -- File explorer
     use("preservim/nerdtree")
-
     -- Python Formatter
     use("psf/black")
+    use("ThePrimeagen/harpoon")
 end )
 

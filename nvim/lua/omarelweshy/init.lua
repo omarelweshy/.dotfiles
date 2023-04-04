@@ -6,6 +6,7 @@ require("omarelweshy.cmp");
 require("omarelweshy.lspconfig");
 require("omarelweshy.keymaps");
 require("omarelweshy.comments")
+require("omarelweshy.harpoon")
 
 local augroup = vim.api.nvim_create_augroup
 omarelweshyGroup = augroup('omarelweshy', {})
