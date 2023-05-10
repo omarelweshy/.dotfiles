@@ -34,13 +34,19 @@ return require("packer").startup(function()
     use("airblade/vim-gitgutter")
     -- rust
     use("rust-lang/rust.vim")
+    -- golang
+    use("fatih/vim-go",{
+        run=":GoUpdateBinaries"
+    })
     -- luaLine
     use("hoob3rt/lualine.nvim")
     use("kyazdani42/nvim-web-devicons")
     use("ryanoasis/vim-devicons")
-    
+
     -- autopair
     use("windwp/nvim-autopairs")
+    -- Indent lines
+    use ("lukas-reineke/indent-blankline.nvim")
     -- java
  --   use 'mfussenegger/nvim-jdtls'
     -- prettier

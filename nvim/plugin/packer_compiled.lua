@@ -120,6 +120,11 @@ _G.packer_plugins = {
     path = "/home/omar/.local/share/nvim/site/pack/packer/start/gruvbox",
     url = "https://github.com/gruvbox-community/gruvbox"
   },
+  harpoon = {
+    loaded = true,
+    path = "/home/omar/.local/share/nvim/site/pack/packer/start/harpoon",
+    url = "https://github.com/ThePrimeagen/harpoon"
+  },
   ["lsp-colors.nvim"] = {
     loaded = true,
     path = "/home/omar/.local/share/nvim/site/pack/packer/start/lsp-colors.nvim",
@@ -239,6 +244,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/omar/.local/share/nvim/site/pack/packer/start/vim-gitgutter",
     url = "https://github.com/airblade/vim-gitgutter"
+  },
+  ["vim-go"] = {
+    loaded = true,
+    path = "/home/omar/.local/share/nvim/site/pack/packer/start/vim-go",
+    url = "https://github.com/fatih/vim-go"
   },
   ["vim-prettier"] = {
     loaded = true,

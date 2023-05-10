@@ -51,4 +51,12 @@ vim.g["rustfmt_autosave"] = 1
 vim.g["rustfmt_emit_files"] = 1
 vim.g["rustfmt_fail_silently"] = 0
 
+-- Golang
+--vim.g["go_bin_path"] = "/usr/local/go"
 vim.opt.wildignore = {'**/node_modules/*', '**/.git/*', '*.pyc', '*_build/*', '**/migrations/*','**/target/*', '*.next/*'}
+
+-- Indent Lines
+vim.opt.list = true
+-- vim.opt.listchars:append "space:⋅"
+-- vim.opt.listchars:append "eol:↴"
+

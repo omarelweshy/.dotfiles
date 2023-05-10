@@ -37,7 +37,9 @@ export PATH=$PATH:$JAVA_HOME/bin
 export PATH="/home/omar/Downloads/binaryen-version_100-x86_64-linux/binaryen-version_100/bin/:$PATH"
 # GO exports
 export GO111MODULE=on
-export PATH=$PATH:/usr/local/go/bin
+export GOPATH=/usr/local/go
+export GOBIN=/usr/local/go/bin
+export PATH=$PATH:$GOBIN
 
 # Kafka Path
 export PATH=$PATH:~/kafka_2.13-3.1.0/bin
@@ -46,6 +48,7 @@ export PATH=$PATH:~/kafka_2.13-3.1.0/bin
 # source ~/.nvm/nvm.sh
 source $ZSH/oh-my-zsh.sh
 source ~/.aliases
+source ~/.aliases.server
 #source /etc/profile.d/maven.sh
 fpath=(~/.zsh.d/ $fpath)
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
