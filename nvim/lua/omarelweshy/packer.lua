@@ -32,6 +32,7 @@ return require("packer").startup(function()
     use("folke/lsp-colors.nvim")
     -- git
     use("airblade/vim-gitgutter")
+    use("f-person/git-blame.nvim")
     -- rust
     use("rust-lang/rust.vim")
     -- golang

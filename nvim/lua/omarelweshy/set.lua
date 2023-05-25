@@ -46,6 +46,10 @@ vim.g["prettier#config#semi"]= false
 vim.opt.mouse=""
 vim.g.ttymouse=""
 
+-- git commit line
+vim.g["gitblame_date_format"] = '%r'
+vim.g["gitblame_virtual_text_column"] = 80
+
 --RUST
 vim.g["rustfmt_autosave"] = 1
 vim.g["rustfmt_emit_files"] = 1
