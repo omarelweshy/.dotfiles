@@ -145,6 +145,11 @@ _G.packer_plugins = {
     path = "/home/omar/.local/share/nvim/site/pack/packer/start/lsp_extensions.nvim",
     url = "https://github.com/nvim-lua/lsp_extensions.nvim"
   },
+  ["lsp_signature.nvim"] = {
+    loaded = true,
+    path = "/home/omar/.local/share/nvim/site/pack/packer/start/lsp_signature.nvim",
+    url = "https://github.com/ray-x/lsp_signature.nvim"
+  },
   ["lspkind-nvim"] = {
     loaded = true,
     path = "/home/omar/.local/share/nvim/site/pack/packer/start/lspkind-nvim",

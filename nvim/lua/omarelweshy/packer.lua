@@ -7,7 +7,7 @@ return require("packer").startup(function()
     use("nvim-lua/popup.nvim")
     use("nvim-telescope/telescope.nvim")
     use("BurntSushi/ripgrep")
-
+    use("hrsh7th/cmp-nvim-lsp-signature-help")
     use("saadparwaiz1/cmp_luasnip")    -- lSP blabla
     use("neovim/nvim-lspconfig")
     use("hrsh7th/cmp-nvim-lsp")
@@ -68,5 +68,7 @@ return require("packer").startup(function()
     -- Python Formatter
     use("psf/black")
     use("ThePrimeagen/harpoon")
+    -- function paramerters
+    use("ray-x/lsp_signature.nvim")
 end )
 

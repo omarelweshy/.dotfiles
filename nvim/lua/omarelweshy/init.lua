@@ -34,6 +34,10 @@ augroup end
 ]])
 
 autocmd('BufWritePre', {
-    pattern = 'python',
+    pattern = 'python3',
     command = 'Black',
 })
+
+-- indetnline
+require('ibl').setup({})
+

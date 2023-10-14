@@ -2,6 +2,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 export TERMINAL=kitty
+export EDITOR=nvim
 ZSH_THEME="wezm"
 DISABLE_UPDATE_PROMPT="true"
 export UPDATE_ZSH_DAYS=7
@@ -82,7 +83,7 @@ function gitall() {
     then 
         git push origin "$2"
     else
-        git push origin main
+        git push 
     fi
 }
 
@@ -91,3 +92,12 @@ function fd() {
   preview="git diff $@ --color=always -- {-1}"
   git diff $@ --name-only | fzf -m --ansi --preview $preview
 }
+
+# pnpm
+export PNPM_HOME="/home/omar/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+export PATH="${HOME}/.config/lsp/lua-language-server/bin:${PATH}"

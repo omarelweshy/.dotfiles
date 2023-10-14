@@ -27,6 +27,7 @@ vim.opt.termguicolors = true
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
+vim.o.clipboard = "unnamedplus"
 
 -- Give more space for displaying messages.
 vim.opt.cmdheight = 1
@@ -54,6 +55,7 @@ vim.g["gitblame_virtual_text_column"] = 80
 vim.g["rustfmt_autosave"] = 1
 vim.g["rustfmt_emit_files"] = 1
 vim.g["rustfmt_fail_silently"] = 0
+-- vim.g["python3_host_prog"] = "/usr/bin/python3.9"
 
 -- Golang
 --vim.g["go_bin_path"] = "/usr/local/go"
