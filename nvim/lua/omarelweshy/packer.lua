@@ -49,7 +49,7 @@ return require("packer").startup(function()
     -- Indent lines
     use ("lukas-reineke/indent-blankline.nvim")
     -- java
- --   use 'mfussenegger/nvim-jdtls'
+    --   use 'mfussenegger/nvim-jdtls'
     -- prettier
     use("prettier/vim-prettier", {
         run = "yarn install --frozen-lockfile --production";
@@ -70,5 +70,7 @@ return require("packer").startup(function()
     use("ThePrimeagen/harpoon")
     -- function paramerters
     use("ray-x/lsp_signature.nvim")
+    -- show current code context
+    use("SmiteshP/nvim-navic")
 end )
 

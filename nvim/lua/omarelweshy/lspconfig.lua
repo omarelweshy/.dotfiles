@@ -1,11 +1,28 @@
+local navic = require("nvim-navic")
+
 require('lspconfig').tsserver.setup{
-    root_dir = function() return vim.loop.cwd() end
+    root_dir = function() return vim.loop.cwd() end,
+    on_attach = function(client, bufnr)
+        navic.attach(client, bufnr)
+    end
 }
-require('lspconfig').rust_analyzer.setup{}
-require('lspconfig').html.setup{}
+require('lspconfig').rust_analyzer.setup{
+    on_attach = function(client, bufnr)
+        navic.attach(client, bufnr)
+    end
+}
+require('lspconfig').html.setup{
+    on_attach = function(client, bufnr)
+        navic.attach(client, bufnr)
+    end
+}
 require('lspconfig').dockerls.setup{}
 require('lspconfig').yamlls.setup{}
-require('lspconfig').pyright.setup{}
+require('lspconfig').pyright.setup{
+    on_attach = function(client, bufnr)
+        navic.attach(client, bufnr)
+    end
+}
 require('lspconfig').lua_ls.setup{}
 require('lspconfig').jdtls.setup{
     cmd = {
@@ -39,3 +56,76 @@ require('lspconfig').jdtls.setup{
     java = {
     },
   }}
+
+navic.setup {
+  icons = {
+    File = ' ',
+    Module = ' ',
+    Namespace = ' ',
+    Package = ' ',
+    Class = ' ',
+    Method = ' ',
+    Property = ' ',
+    Field = ' ',
+    Constructor = ' ',
+    Enum = ' ',
+    Interface = ' ',
+    Function = ' ',
+    Variable = ' ',
+    Constant = ' ',
+    String = ' ',
+    Number = ' ',
+    Boolean = ' ',
+    Array = ' ',
+    Object = ' ',
+    Key = ' ',
+    Null = ' ',
+    EnumMember = ' ',
+    Struct = ' ',
+    Event = ' ',
+    Operator = ' ',
+    TypeParameter = ' '
+  }
+}
+navic.setup {
+    icons = {
+        File          = "󰈙 ",
+        Module        = " ",
+        Namespace     = "󰌗 ",
+        Package       = " ",
+        Class         = "󰌗 ",
+        Method        = "󰆧 ",
+        Property      = " ",
+        Field         = " ",
+        Constructor   = " ",
+        Enum          = "󰕘",
+        Interface     = "󰕘",
+        Function      = "󰊕 ",
+        Variable      = "󰆧 ",
+        Constant      = "󰏿 ",
+        String        = "󰀬 ",
+        Number        = "󰎠 ",
+        Boolean       = "◩ ",
+        Array         = "󰅪 ",
+        Object        = "󰅩 ",
+        Key           = "󰌋 ",
+        Null          = "󰟢 ",
+        EnumMember    = " ",
+        Struct        = "󰌗 ",
+        Event         = " ",
+        Operator      = "󰆕 ",
+        TypeParameter = "󰊄 ",
+    },
+    lsp = {
+        auto_attach = false,
+        preference = nil,
+    },
+    highlight = true,
+    separator = " > ",
+    depth_limit = 0,
+    depth_limit_indicator = "..",
+    safe_output = true,
+    lazy_update_context = false,
+    click = false
+}
+

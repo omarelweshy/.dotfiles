@@ -66,3 +66,5 @@ vim.opt.list = true
 -- vim.opt.listchars:append "space:⋅"
 -- vim.opt.listchars:append "eol:↴"
 
+-- nvim-navic 
+vim.o.winbar = "%{%v:lua.require'nvim-navic'.get_location()%}"

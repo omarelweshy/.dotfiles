@@ -40,4 +40,3 @@ autocmd('BufWritePre', {
 
 -- indetnline
 require('ibl').setup({})
-

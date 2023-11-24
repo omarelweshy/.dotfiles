@@ -36,11 +36,9 @@ export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{n
 export JAVA_HOME="/usr/lib/jvm/java-11-openjdk" # !!!!!!!!!! NOT WORKING WITH MacOS
 export PATH=$PATH:$JAVA_HOME/bin
 export PATH="/home/omar/Downloads/binaryen-version_100-x86_64-linux/binaryen-version_100/bin/:$PATH"
+
 # GO exports
-export GO111MODULE=on
-export GOPATH=/usr/local/go
-export GOBIN=/usr/local/go/bin
-export PATH=$PATH:$GOBIN
+export PATH=$PATH:/usr/local/go/bin
 
 # Kafka Path
 export PATH=$PATH:~/kafka_2.13-3.1.0/bin
