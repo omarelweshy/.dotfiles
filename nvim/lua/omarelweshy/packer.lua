@@ -72,5 +72,7 @@ return require("packer").startup(function()
     use("ray-x/lsp_signature.nvim")
     -- show current code context
     use("SmiteshP/nvim-navic")
+    -- Multi line selcetion
+    use("mg979/vim-visual-multi")
 end )
 

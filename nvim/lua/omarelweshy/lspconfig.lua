@@ -1,5 +1,6 @@
 local navic = require("nvim-navic")
 
+require("lspconfig").gopls.setup{}
 require('lspconfig').tsserver.setup{
     root_dir = function() return vim.loop.cwd() end,
     on_attach = function(client, bufnr)
