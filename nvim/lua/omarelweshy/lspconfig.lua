@@ -25,6 +25,7 @@ require('lspconfig').pyright.setup{
     end
 }
 require('lspconfig').lua_ls.setup{}
+require('lspconfig').cssls.setup{}
 require('lspconfig').jdtls.setup{
     cmd = {
         -- 💀

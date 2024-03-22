@@ -59,7 +59,7 @@ vim.g["rustfmt_fail_silently"] = 0
 
 -- Golang
 --vim.g["go_bin_path"] = "/usr/local/go"
-vim.opt.wildignore = {'**/node_modules/*', '**/.git/*', '*.pyc', '*_build/*', '**/migrations/*','**/target/*', '*.next/*'}
+vim.opt.wildignore = {'**/node_modules/*', '**/.git/*', '*.pyc', '*_build/*', '**/target/*', '*.next/*'}
 
 -- Indent Lines
 vim.opt.list = true
