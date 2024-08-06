@@ -33,6 +33,11 @@ augroup end
 
 ]])
 
+vim.cmd [[
+  autocmd BufRead,BufNewFile *.templ set filetype=html
+]]
+
+
 autocmd('BufWritePre', {
     pattern = 'python3',
     command = 'Black',

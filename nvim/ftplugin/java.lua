@@ -3,7 +3,7 @@ local config = {
   -- The command that starts the language server
   cmd = {
     -- 💀
-    '/usr/lib/jvm/java-11-openjdk/bin/java',
+    '/usr/lib/jvm/java-17-openjdk-amd64/bin/java',
     '-Declipse.application=org.eclipse.jdt.ls.core.id1',
     '-Dosgi.bundles.defaultStartLevel=4',
     '-Declipse.product=org.eclipse.jdt.ls.core.product',
@@ -35,4 +35,4 @@ local config = {
   }
 -- This starts a new client & server,
 -- or attaches to an existing client & server depending on the `root_dir`
---require('jdtls').start_or_attach(config)
+-- require('jdtls').start_or_attach(config)

@@ -3,7 +3,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 export ZSH=$HOME/.oh-my-zsh
 export TERMINAL=kitty
 export EDITOR=nvim
-ZSH_THEME="wezm"
+ZSH_THEME="jonathan"
 DISABLE_UPDATE_PROMPT="true"
 export UPDATE_ZSH_DAYS=7
 ENABLE_CORRECTION="true"
@@ -33,12 +33,13 @@ export MANPATH="/usr/local/man:$MANPATH"
 export LANG=en_US.UTF-8
 export FZF_DEFAULT_OPS="--extended"
 export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{node_modules/*,.git/*}"'
-export JAVA_HOME="/usr/lib/jvm/java-11-openjdk" # !!!!!!!!!! NOT WORKING WITH MacOS
+export JAVA_HOME="/usr/lib/jvm/java-17-openjdk-amd64" # !!!!!!!!!! NOT WORKING WITH MacOS
 export PATH=$PATH:$JAVA_HOME/bin
 export PATH="/home/omar/Downloads/binaryen-version_100-x86_64-linux/binaryen-version_100/bin/:$PATH"
 
 # GO exports
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/bin/exercism
 
 # Kafka Path
 export PATH=$PATH:~/kafka_2.13-3.1.0/bin
@@ -99,3 +100,10 @@ case ":$PATH:" in
 esac
 # pnpm end
 export PATH="${HOME}/.config/lsp/lua-language-server/bin:${PATH}"
+
+# Flutter
+export PATH="$PATH:/opt/flutter/bin"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"

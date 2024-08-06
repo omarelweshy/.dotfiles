@@ -72,8 +72,24 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protoc
   -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
 require('lspconfig')['tsserver'].setup {
     capabilities = capabilities
-  }
+}
 
 require('lspconfig')['html'].setup {
     capabilities = capabilities
+}
+require('lspconfig')['cssls'].setup {
+    capabilities = capabilities,
+      filetypes = { "css", "scss", "less", "html" },
+      settings = {
+        css = {
+          validate = true,
+        },
+        less = {
+          validate = true,
+        },
+        scss = {
+          validate = true,
+        },
+      },
+
   }

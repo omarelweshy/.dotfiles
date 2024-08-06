@@ -53,7 +53,7 @@ return require("packer").startup(function()
     -- prettier
     use("prettier/vim-prettier", {
         run = "yarn install --frozen-lockfile --production";
-        ft= {'javascript', 'typescript', 'typescriptreact' ,'css', 'less', 'scss', 'json', 'graphql', 'svelte', 'yaml', 'html', "rust", "lua"}
+        ft= {'javascript', 'typescript', 'typescriptreact' ,'css', 'less', 'scss', 'json', 'graphql', 'svelte', 'yaml', 'html', "rust", "lua", "templ"}
     })
 
     -- Commenting
@@ -73,6 +73,6 @@ return require("packer").startup(function()
     -- show current code context
     use("SmiteshP/nvim-navic")
     -- Multi line selcetion
-    use("mg979/vim-visual-multi")
+    -- use("mg979/vim-visual-multi")
 end )
 

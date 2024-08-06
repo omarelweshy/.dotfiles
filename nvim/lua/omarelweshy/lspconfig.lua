@@ -13,6 +13,7 @@ require('lspconfig').rust_analyzer.setup{
     end
 }
 require('lspconfig').html.setup{
+    filetypes = { "html", "templ" },
     on_attach = function(client, bufnr)
         navic.attach(client, bufnr)
     end
