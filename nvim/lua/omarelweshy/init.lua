@@ -45,3 +45,9 @@ autocmd('BufWritePre', {
 
 -- indetnline
 require('ibl').setup({})
+require('lspsaga').setup({
+    lightbulb = {
+        enable = false,
+    }
+})
+
